@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Corte Masculino",
+    "description": "Do clássico ao fade, acabamento preciso.",
+    "image": "./assets/img/services/corte-masculino.jpg",
+    "alt": "Corte masculino com acabamento"
+  },
+  {
+    "name": "Barba Completa",
+    "description": "Aparar, alinhar e hidratar para um visual impecável.",
+    "image": "./assets/img/services/barba.jpg",
+    "alt": "Barba alinhada e finalizada"
+  },
+  {
+    "name": "Coloração",
+    "description": "Cor uniforme, brilho e proteção dos fios.",
+    "image": "./assets/img/services/coloracao.jpg",
+    "alt": "Coloração capilar"
+  },
+  {
+    "name": "Tratamentos",
+    "description": "Hidratação, reconstrução e terapia do couro cabeludo.",
+    "image": "./assets/img/services/tratamentos.jpg",
+    "alt": "Tratamento capilar"
+  }
+]

@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Gaucho’s Hair — Barbearia & Salão</title>
+    <meta
+      name="description"
+      content="Cortes, barba, coloração e tratamentos. Agende seu horário no WhatsApp. Gaucho’s Hair — Itu/SP."
+    />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS (ordem: base → layout → components → utilities) -->
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/layout.css" />
+    <link rel="stylesheet" href="./css/components.css" />
+    <link rel="stylesheet" href="./css/utilities.css" />
+
+    <!-- OG básico -->
+    <meta property="og:title" content="Gaucho’s Hair — Barbearia & Salão" />
+    <meta
+      property="og:description"
+      content="Cortes, barba, coloração e tratamentos. Agende seu horário no WhatsApp."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="./assets/img/hero/hero.jpg" />
+    <meta property="og:url" content="https://seu-dominio.com" />
+  </head>
+
+  <body>
+    <!-- Header / Navegação -->
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="#inicio" aria-label="Gaucho’s Hair - Início">
+          <img
+            class="brand-logo"
+            src="./assets/img/LogoMarca.jpg"
+            alt="Gaucho’s Hair"
+          />
+          <span class="brand-name">Gaucho’s Hair</span>
+        </a>
+
+        <button
+          id="navToggle"
+          class="nav-toggle"
+          aria-controls="siteNav"
+          aria-expanded="false"
+          aria-label="Abrir menu"
+        >
+          <span class="nav-toggle-bar"></span>
+        </button>
+
+        <nav id="siteNav" class="site-nav" aria-label="Principal">
+          <ul>
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#diferenciais">Diferenciais</a></li>
+            <li><a href="#depoimentos">Depoimentos</a></li>
+            <li><a href="#localizacao">Localização</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="inicio">
+      <!-- Hero -->
+      <section class="hero">
+        <div class="hero-content container">
+          <h1 class="hero-title">Estilo que fala por você.</h1>
+          <p class="hero-subtitle">
+            Cortes, barba, coloração e tratamentos — do clássico ao moderno, com
+            técnica e atenção aos detalhes.
+          </p>
+          <div class="hero-actions">
+            <a
+              id="ctaWhatsapp"
+              class="btn btn-primary"
+              href="https://wa.me/5511975231626?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20um%20hor%C3%A1rio%20no%20Gaucho%E2%80%99s%20Hair."
+              target="_blank"
+              rel="noopener"
+              >Agendar no WhatsApp</a
+            >
+            <a class="btn btn-secondary" href="#servicos">Ver serviços</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Serviços & Resultados (somente vídeos) -->
+      <section id="servicos" class="section section-services">
+        <div class="container">
+          <header class="section-header">
+            <h2>Serviços &amp; Resultados</h2>
+            <p>
+              Alguns trabalhos recentes em cortes, barba, coloração e
+              tratamentos.
+            </p>
+          </header>
+
+          <div class="media-carousel" aria-label="Galeria de serviços">
+            <figure class="media-item">
+              <video
+                class="media"
+                autoplay
+                muted
+                loop
+                playsinline
+                preload="auto"
+                aria-label="Corte masculino"
+              >
+                <source src="./assets/videos/video1.mp4" type="video/mp4" />
+              </video>
+            </figure>
+
+            <figure class="media-item">
+              <video
+                class="media"
+                autoplay
+                muted
+                loop
+                playsinline
+                preload="metadata"
+                aria-label="Acabamento fade"
+              >
+                <source src="./assets/videos/video2.mp4" type="video/mp4" />
+              </video>
+            </figure>
+
+            <figure class="media-item">
+              <video
+                class="media"
+                autoplay
+                muted
+                loop
+                playsinline
+                preload="metadata"
+                aria-label="Barba e navalha"
+              >
+                <source src="./assets/videos/video3.mp4" type="video/mp4" />
+              </video>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <!-- Diferenciais (sem depender de fotos) -->
+      <section id="diferenciais" class="section">
+        <div class="container">
+          <header class="section-header">
+            <h2>Diferenciais</h2>
+            <p>Por que escolher o Gaucho’s Hair.</p>
+          </header>
+
+          <div class="grid features-grid">
+            <article class="feature-card">
+              <div class="feature-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    fill="currentColor"
+                    d="M7.5 3A2.5 2.5 0 1 1 5 5.5 2.5 2.5 0 0 1 7.5 3m9 0a2.5 2.5 0 1 1-2.5 2.5A2.5 2.5 0 0 1 16.5 3M4.91 9.59l5.74 2.88L8 14.12l-2.48-1.25A3.5 3.5 0 1 1 4.9 9.59m14.19.01a3.5 3.5 0 0 1-1.61 3.27L15 14.12l-2.65-1.32 5.74-2.88a3.51 3.51 0 0 1 1.61-3.27M12 13.5l6.5 3.25a1 1 0 1 1-.89 1.8L12 15.6l-5.61 2.95a1 1 0 1 1-.9-1.8z"
+                  />
+                </svg>
+              </div>
+              <h3>Corte técnico</h3>
+              <p>Do clássico ao moderno, acabamento preciso e visagismo.</p>
+            </article>
+
+            <article class="feature-card">
+              <div class="feature-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    fill="currentColor"
+                    d="M21 7.5L10.5 18 6 13.5 16.5 3H21v4.5M4.5 15 3 16.5l4.5 4.5L9 19.5z"
+                  />
+                </svg>
+              </div>
+              <h3>Barba &amp; navalha</h3>
+              <p>Alinhamento, hidratação e rituais de cuidado.</p>
+            </article>
+
+            <article class="feature-card">
+              <div class="feature-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    fill="currentColor"
+                    d="M7 16c.6-1.6 2-2 3-2h2l7-7-3-3-7 7v2c0 1-1 2-2 2H7m-4 5c2 0 3-1 3-3h3c2 0 3-1 3-3H9c-4 0-3 4-6 4v2z"
+                  />
+                </svg>
+              </div>
+              <h3>Coloração segura</h3>
+              <p>Tonalidades sob medida e respeito à saúde do fio.</p>
+            </article>
+
+            <article class="feature-card">
+              <div class="feature-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    fill="currentColor"
+                    d="M12 1a11 11 0 1 1-11 11A11 11 0 0 1 12 1m1 6h-2v6l5 3 .9-1.5-3.9-2.3z"
+                  />
+                </svg>
+              </div>
+              <h3>Agendamento ágil</h3>
+              <p>Atendimento pontual e WhatsApp direto.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Depoimentos -->
+      <section id="depoimentos" class="section section-testimonials">
+        <div class="container">
+          <header class="section-header">
+            <h2>Depoimentos</h2>
+            <p>O que nossos clientes dizem.</p>
+          </header>
+
+          <div class="testimonials" aria-live="polite">
+            <button class="ts-nav ts-prev" aria-label="Anterior">&larr;</button>
+            <ul id="tsList" class="ts-list">
+              <li class="ts-item">
+                <blockquote>
+                  <p>“Atendimento excelente e corte impecável.”</p>
+                  <footer>— Cliente Satisfeito</footer>
+                </blockquote>
+              </li>
+            </ul>
+            <button class="ts-nav ts-next" aria-label="Próximo">&rarr;</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Localização -->
+      <section id="localizacao" class="section section-map">
+        <div class="container">
+          <header class="section-header">
+            <h2>Localização</h2>
+            <p>Rua Márcia Pierroni, 68 — Novo Centro, Itu/SP</p>
+          </header>
+
+          <div class="map-embed">
+            <iframe
+              title="Mapa - Gaucho’s Hair"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              src="https://www.google.com/maps?q=Rua%20M%C3%A1rcia%20Pierroni%2C%2068%2C%20Itu%20SP&output=embed"
+            >
+            </iframe>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contato -->
+      <section id="contato" class="section section-contact">
+        <div class="container contact-inner">
+          <div>
+            <h2>Contato</h2>
+            <ul class="contact-list">
+              <li>
+                <strong>WhatsApp:</strong>
+                <a
+                  id="waInline"
+                  href="https://wa.me/5511975231626?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20um%20hor%C3%A1rio%20no%20Gaucho%E2%80%99s%20Hair.
+"
+                  target="_blank"
+                  rel="noopener"
+                  >Enviar mensagem</a
+                >
+              </li>
+              <li>
+                <strong>Instagram:</strong>
+                <a
+                  href="https://www.instagram.com/gauchoshairitu"
+                  target="_blank"
+                  rel="noopener"
+                  >@gauchoshairitu</a
+                >
+              </li>
+              <li>
+                <strong>Linktree:</strong>
+                <a
+                  href="https://linktr.ee/gaucho_shair"
+                  target="_blank"
+                  rel="noopener"
+                  >Acessar links</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <p>
+          &copy; <span id="year"></span> Gaucho’s Hair — Todos os direitos
+          reservados.
+        </p>
+        <p class="credit">
+          Site desenvolvido por
+          <a
+            href="https://www.linkedin.com/in/jo%C3%A3o-paulo-peres-167999218/"
+            target="_blank"
+            rel="noopener"
+            >João Paulo Peres</a
+          >.
+        </p>
+      </div>
+    </footer>
+
+    <!-- Botão flutuante WhatsApp -->
+    <a
+      id="waFloat"
+      class="whatsapp-float"
+      href="#"
+      target="_blank"
+      rel="noopener"
+      aria-label="Agendar no WhatsApp"
+    >
+      <img src="./assets/icons//whatsappicon01.png" alt="" />
+    </a>
+
+    <!-- JS -->
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>
